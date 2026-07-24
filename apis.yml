@@ -1,23 +1,76 @@
 aid: combinatorx
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/combinatorx.png
 name: Combinatorx
-description: Combinatorx is a company surfaced as a portfolio company of canaan-partners and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'CombinatoRx, Inc. was a Cambridge/Boston, Massachusetts biopharmaceutical company (SEC
+  CIK 0001135906, SIC 2834 Pharmaceutical Preparations, incorporated in Delaware) that pursued
+  combination drug discovery — screening pairs of approved drugs for synergistic therapeutic effects.
+  It registered with the SEC in 2002 and traded publicly following its 2005 IPO. The company was
+  renamed Zalicus Inc. in September 2010 after its combination with Neuromed Pharmaceuticals, and
+  renamed again to EPIRUS Biopharmaceuticals, Inc. in July 2014 after merging with EPIRUS. EPIRUS was
+  delisted in September 2016 (Form 25-NSE) and its SEC registration was formally revoked on
+  2024-05-14. The company is defunct: it operated no developer program and published no public API,
+  SDK, or developer documentation, and combinatorx.com is now a parked NameBright listing unrelated
+  to the original company. This profile is retained as a historical record of a Canaan Partners
+  portfolio company and has no API surface to catalog.'
 url: https://raw.githubusercontent.com/api-evangelist/combinatorx/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - canaan-partners
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: defunct-no-api-surface
+x-status: defunct
+x-successor: EPIRUS Biopharmaceuticals, Inc.
+x-former-names:
+- name: COMBINATORX INC
+  from: '2002-09-12'
+  to: '2004-02-26'
+- name: COMBINATORX, INC
+  from: '2004-12-10'
+  to: '2010-08-10'
+- name: Zalicus Inc.
+  from: '2010-09-09'
+  to: '2014-07-02'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Drug Discovery
+- Life Sciences
+- Healthcare
+- Defunct
+- Venture Backed
 apis: []
+common:
+- type: SECFilings
+  name: SEC EDGAR filings (CIK 0001135906)
+  url: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001135906&type=10-K&dateb=&owner=include&count=40
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  notes: 'Company confirmed defunct via SEC EDGAR (CIK 0001135906): CombinatoRx -> Zalicus (2010) ->
+    EPIRUS Biopharmaceuticals (2014), delisted 2016-09-26, registration revoked 2024-05-14. No API,
+    SDK, package, GitHub org, or developer surface exists. combinatorx.com resolves to a parked
+    NameBright page whose catch-all returns 200 for every path, so the /.well-known/security.txt and
+    /llms.txt hits are not real artifacts and were not saved. No artifacts written.'
